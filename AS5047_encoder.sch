@@ -52,125 +52,158 @@ $EndDescr
 $Comp
 L AS5047 U1
 U 1 1 5A489C6C
-P 5400 3600
-F 0 "U1" H 5350 4050 60  0000 C TNN
-F 1 "AS5047" H 5400 3150 60  0000 C BNN
-F 2 "Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 5400 3150 60  0001 C CNN
-F 3 "" H 5400 3150 60  0001 C CNN
-	1    5400 3600
+P 5050 2450
+F 0 "U1" H 5000 2900 60  0000 C TNN
+F 1 "AS5047" H 5050 2000 60  0000 C BNN
+F 2 "Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 5050 2000 60  0001 C CNN
+F 3 "" H 5050 2000 60  0001 C CNN
+	1    5050 2450
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C1
 U 1 1 5A4900D1
-P 6200 3750
-F 0 "C1" H 6225 3850 50  0000 L CNN
-F 1 "C" H 6225 3650 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 6238 3600 50  0001 C CNN
-F 3 "" H 6200 3750 50  0001 C CNN
-	1    6200 3750
+P 5850 2600
+F 0 "C1" H 5875 2700 50  0000 L CNN
+F 1 "C" H 5875 2500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5888 2450 50  0001 C CNN
+F 3 "" H 5850 2600 50  0001 C CNN
+	1    5850 2600
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C2
 U 1 1 5A490198
-P 6500 3750
-F 0 "C2" H 6525 3850 50  0000 L CNN
-F 1 "C" H 6525 3650 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 6538 3600 50  0001 C CNN
-F 3 "" H 6500 3750 50  0001 C CNN
-	1    6500 3750
+P 6150 2600
+F 0 "C2" H 6175 2700 50  0000 L CNN
+F 1 "C" H 6175 2500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6188 2450 50  0001 C CNN
+F 3 "" H 6150 2600 50  0001 C CNN
+	1    6150 2600
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR01
 U 1 1 5A4901E0
-P 6850 4150
-F 0 "#PWR01" H 6850 3900 50  0001 C CNN
-F 1 "GND" H 6850 4000 50  0000 C CNN
-F 2 "" H 6850 4150 50  0001 C CNN
-F 3 "" H 6850 4150 50  0001 C CNN
-	1    6850 4150
+P 6500 3000
+F 0 "#PWR01" H 6500 2750 50  0001 C CNN
+F 1 "GND" H 6500 2850 50  0000 C CNN
+F 2 "" H 6500 3000 50  0001 C CNN
+F 3 "" H 6500 3000 50  0001 C CNN
+	1    6500 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 3500 5950 3600
+	5600 2350 5600 2450
 $Comp
-L CONN_01X07 P1
+L CONN_01X07 J1
 U 1 1 5A49201F
-P 4150 3650
-F 0 "P1" H 4150 4050 50  0000 C CNN
-F 1 "CONN_01X07" V 4250 3650 50  0000 C CNN
-F 2 "w_conn_jst-ph:s7b-ph-kl" H 4150 3650 50  0001 C CNN
-F 3 "" H 4150 3650 50  0000 C CNN
-	1    4150 3650
+P 3050 2500
+F 0 "J1" H 3000 2100 50  0000 C CNN
+F 1 "CONN_01X07" V 3150 2500 50  0000 C CNN
+F 2 "w_conn_jst-ph:s7b-ph-kl" H 3050 2500 50  0001 C CNN
+F 3 "" H 3050 2500 50  0000 C CNN
+	1    3050 2500
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5950 3600 6500 3600
-Connection ~ 6200 3600
+	5600 2450 6150 2450
+Connection ~ 5850 2450
 Wire Wire Line
-	6200 3900 6200 4000
+	5850 2750 5850 2850
 Wire Wire Line
-	6200 4000 6850 4000
+	5850 2850 6500 2850
 Wire Wire Line
-	6500 4000 6500 3900
+	6150 2850 6150 2750
 Wire Wire Line
-	6850 3400 6850 4150
-Connection ~ 6500 4000
+	6500 2250 6500 3000
+Connection ~ 6150 2850
 Wire Wire Line
-	5950 3400 6850 3400
-Connection ~ 6850 4000
+	5600 2250 6500 2250
+Connection ~ 6500 2850
 Wire Wire Line
-	4350 3850 4650 3850
+	3250 2700 4100 2700
 Wire Wire Line
-	4650 3850 4650 4200
+	4100 2700 4100 3050
 Wire Wire Line
-	4650 4200 6050 4200
+	4100 3050 5700 3050
 Wire Wire Line
-	6050 4200 6050 3600
-Connection ~ 6050 3600
+	5700 3050 5700 2450
+Connection ~ 5700 2450
 $Comp
 L GND #PWR02
 U 1 1 5A49238E
-P 4800 3950
-F 0 "#PWR02" H 4800 3700 50  0001 C CNN
-F 1 "GND" H 4800 3800 50  0000 C CNN
-F 2 "" H 4800 3950 50  0001 C CNN
-F 3 "" H 4800 3950 50  0001 C CNN
-	1    4800 3950
+P 4250 2800
+F 0 "#PWR02" H 4250 2550 50  0001 C CNN
+F 1 "GND" H 4250 2650 50  0000 C CNN
+F 2 "" H 4250 2800 50  0001 C CNN
+F 3 "" H 4250 2800 50  0001 C CNN
+	1    4250 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4350 3750 4800 3750
+	3250 2600 4250 2600
 Wire Wire Line
-	4800 3750 4800 3950
+	4250 2600 4250 2800
 Wire Wire Line
-	4350 3650 4700 3650
+	3250 2500 4150 2500
 Wire Wire Line
-	4700 3650 4700 3400
+	4150 2500 4150 2250
 Wire Wire Line
-	4700 3400 4950 3400
+	4150 2250 4600 2250
 Wire Wire Line
-	4350 3550 4600 3550
+	3250 2400 4050 2400
 Wire Wire Line
-	4600 3550 4600 3300
+	4050 2400 4050 2150
 Wire Wire Line
-	4600 3300 4950 3300
+	4050 2150 4600 2150
 Wire Wire Line
-	4350 3450 4800 3450
+	3250 2300 4250 2300
 Wire Wire Line
-	4800 3450 4800 3600
+	4250 2300 4250 2450
 Wire Wire Line
-	4800 3600 4950 3600
+	4250 2450 4600 2450
 Wire Wire Line
-	4350 3350 4450 3350
+	3250 2200 3900 2200
 Wire Wire Line
-	4450 3350 4450 3200
+	3900 2200 3900 2050
 Wire Wire Line
-	4450 3200 4900 3200
+	3900 2050 4550 2050
 Wire Wire Line
-	4900 3200 4900 3500
+	4550 2050 4550 2350
 Wire Wire Line
-	4900 3500 4950 3500
+	4550 2350 4600 2350
+Text Label 6100 2250 0    60   ~ 0
+GND
+Text Label 4700 3050 0    60   ~ 0
+VCC
+Text Label 3400 2200 0    60   ~ 0
+MISO
+Text Label 3400 2300 0    60   ~ 0
+MOSI
+Text Label 3400 2400 0    60   ~ 0
+CSn
+Text Label 3400 2500 0    60   ~ 0
+CLK
+Text Label 3400 2600 0    60   ~ 0
+GND
+Text Label 3400 2700 0    60   ~ 0
+VCC
+Text Notes 1800 5500 0    79   ~ 16
+Author: Taylor Alexander, Jan 2018.\nVESC Compatible encoder board, Rev 1.0.\n\nThis encoder board can be used with a radially polarized magnet to sense the position of a shaft.\nTypically used for motor encoders and works great for smooth starts or robotics prototyping.\nVESC fans will appreciate that this makes FOC work really well.\n\nNote that you need a firmware with hardware SPI enabled in conf.\nAsk on the forums or compile yourself at https://github.com/vedderb/bldc.\n\nThis work is licensed Creative Commons Zero (CC0). This information can be used for any purpose.\n\nIf you love someone, engineer something for them. Find out more at www.reboot.love.
+$Comp
+L GND #PWR03
+U 1 1 5A5EFC26
+P 4450 2600
+F 0 "#PWR03" H 4450 2350 50  0001 C CNN
+F 1 "GND" H 4450 2450 50  0000 C CNN
+F 2 "" H 4450 2600 50  0001 C CNN
+F 3 "" H 4450 2600 50  0001 C CNN
+	1    4450 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2550 4450 2550
+Wire Wire Line
+	4450 2550 4450 2600
 $EndSCHEMATC

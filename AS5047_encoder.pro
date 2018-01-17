@@ -1,4 +1,4 @@
-update=Sun 31 Dec 2017 12:58:32 AM PST
+update=Wed 17 Jan 2018 12:53:40 AM PST
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=/home/taylor/PCB/bldc-hardware/design/Libraries
@@ -64,3 +62,5 @@ LibName32=valves
 LibName33=as5047
 LibName34=crf_1
 LibName35=/home/taylor/PCB/bldc-hardware/design/BLDC_4-cache
+[general]
+version=1
