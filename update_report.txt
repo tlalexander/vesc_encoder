@@ -1,0 +1,18 @@
+Info: Backing up file “/home/taylor/PCB/vesc_encoder/sym-lib-table” to file “/home/taylor/PCB/vesc_encoder/rescue-backup/sym-lib-table-2019-01-26-11-34-58”.
+Info: Backing up file “/home/taylor/PCB/vesc_encoder/AS5047_encoder.sch” to file “/home/taylor/PCB/vesc_encoder/rescue-backup/AS5047_encoder-2019-01-26-11-34-58.sch”.
+Info: Backing up file “/home/taylor/PCB/vesc_encoder/AS5047_encoder.pro” to file “/home/taylor/PCB/vesc_encoder/rescue-backup/AS5047_encoder-2019-01-26-11-34-58.pro”.
+Info: Backing up file “/home/taylor/PCB/vesc_encoder/AS5047_encoder-cache.lib” to file “/home/taylor/PCB/vesc_encoder/rescue-backup/AS5047_encoder-cache-2019-01-26-11-34-58.lib”.
+Info: Backing up file “/home/taylor/PCB/vesc_encoder/AS5047_encoder-rescue.lib” to file “/home/taylor/PCB/vesc_encoder/rescue-backup/AS5047_encoder-rescue-2019-01-26-11-34-58.lib”.
+Info: Backing up file “/home/taylor/PCB/vesc_encoder/AS5047_encoder-rescue.dcm” to file “/home/taylor/PCB/vesc_encoder/rescue-backup/AS5047_encoder-rescue-2019-01-26-11-34-58.dcm”.
+Info: Adding library “AS5047_encoder-rescue”, file “${KIPRJMOD}/AS5047_encoder-rescue.lib” to project symbol library table.
+Info: Adding library “as5047”, file “${KIPRJMOD}/as5047.lib” to project symbol library table.
+Info: Adding library “crf_1”, file “/home/taylor/PCB/bldc-hardware/design/Libraries/crf_1.lib” to project symbol library table.
+Info: Adding library “BLDC_4-cache”, file “/home/taylor/PCB/bldc-hardware/design/BLDC_4-cache.lib” to project symbol library table.
+Symbol “AS5047” mapped to symbol library “as5047”.
+Symbol “C” mapped to symbol library “AS5047_encoder-rescue”.
+Symbol “C” mapped to symbol library “AS5047_encoder-rescue”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “CONN_01X07” mapped to symbol library “BLDC_4-cache”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “GND” mapped to symbol library “power”.
+Info: Symbol library table mapping complete!

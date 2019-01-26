@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name AS5047_encoder-rescue)(type Legacy)(uri ${KIPRJMOD}/AS5047_encoder-rescue.lib)(options "")(descr ""))
+  (lib (name as5047)(type Legacy)(uri ${KIPRJMOD}/as5047.lib)(options "")(descr ""))
+  (lib (name crf_1)(type Legacy)(uri /home/taylor/PCB/bldc-hardware/design/Libraries/crf_1.lib)(options "")(descr ""))
+  (lib (name BLDC_4-cache)(type Legacy)(uri /home/taylor/PCB/bldc-hardware/design/BLDC_4-cache.lib)(options "")(descr ""))
+)

@@ -1,12 +1,9 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.7+dfsg1-1)
+(kicad_pcb (version 20171130) (host pcbnew 5.0.2+dfsg1-1)
 
   (general
-    (links 0)
-    (no_connects 0)
-    (area 67.030233 75.194993 105.510001 109.320001)
     (thickness 1.6)
-    (drawings 9)
-    (tracks 52)
+    (drawings 11)
+    (tracks 48)
     (zones 0)
     (modules 10)
     (nets 14)
@@ -22,10 +19,10 @@
     (35 F.Paste user)
     (36 B.SilkS user)
     (37 F.SilkS user)
-    (38 B.Mask user)
+    (38 B.Mask user hide)
     (39 F.Mask user)
-    (40 Dwgs.User user hide)
-    (41 Cmts.User user hide)
+    (40 Dwgs.User user)
+    (41 Cmts.User user)
     (42 Eco1.User user hide)
     (43 Eco2.User user hide)
     (44 Edge.Cuts user)
@@ -33,7 +30,7 @@
     (46 B.CrtYd user hide)
     (47 F.CrtYd user hide)
     (48 B.Fab user hide)
-    (49 F.Fab user hide)
+    (49 F.Fab user)
   )
 
   (setup
@@ -61,11 +58,15 @@
     (pad_size 1.524 1.524)
     (pad_drill 0.762)
     (pad_to_mask_clearance 0.2)
+    (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
-    (visible_elements FFFD5FBF)
+    (visible_elements FFFFDFFF)
     (pcbplotparams
       (layerselection 0x010fc_80000001)
       (usegerberextensions true)
+      (usegerberattributes false)
+      (usegerberadvancedattributes false)
+      (creategerberjobfile false)
       (excludeedgelayer true)
       (linewidth 0.100000)
       (plotframeref false)
@@ -74,8 +75,7 @@
       (useauxorigin false)
       (hpglpennumber 1)
       (hpglpenspeed 20)
-      (hpglpendiameter 15)
-      (hpglpenoverlay 2)
+      (hpglpendiameter 15.000000)
       (psnegative false)
       (psa4output false)
       (plotreference true)
@@ -87,7 +87,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory Gerber))
+      (outputdirectory "Gerber"))
   )
 
   (net 0 "")
@@ -127,15 +127,15 @@
     (add_net "Net-(U1-Pad9)")
   )
 
-  (module w_conn_jst-ph:s7b-ph-kl (layer Top) (tedit 5A570897) (tstamp 5A551A81)
+  (module w_conn_jst-ph:s7b-ph-kl (layer Top) (tedit 5C4CB850) (tstamp 5A551A81)
     (at 80.01 87.63 217.2)
     (descr "JST PH series connector, S7B-PH-KL")
     (path /5A49201F)
     (fp_text reference J1 (at -10.138672 -1.905389 217.2) (layer F.SilkS)
-      (effects (font (thickness 0.3048)))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)))
     )
-    (fp_text value CONN_01X07 (at 0.810465 9.225022 217.2) (layer F.SilkS) hide
-      (effects (font (thickness 0.3048)))
+    (fp_text value "" (at 0.810465 9.225022 217.2) (layer F.SilkS) hide
+      (effects (font (size 1.524 1.524) (thickness 0.3048)))
     )
     (fp_line (start -6.2992 4.09956) (end -6.2992 6.2992) (layer F.SilkS) (width 0.381))
     (fp_line (start -6.2992 6.2992) (end -6.59892 6.2992) (layer F.SilkS) (width 0.381))
@@ -165,11 +165,11 @@
       (net 13 "Net-(J1-Pad1)"))
     (pad 2 thru_hole oval (at -4.0005 0 217.2) (size 1.19888 1.69926) (drill 0.70104) (layers *.Cu *.Mask F.SilkS)
       (net 8 /VCC))
-    (pad 3 thru_hole oval (at -1.99898 0 217.2) (size 1.19888 1.69926) (drill 0.70104) (layers *.Cu *.Mask F.SilkS)
+    (pad 3 thru_hole oval (at -1.99898 0.000001 217.2) (size 1.19888 1.69926) (drill 0.70104) (layers *.Cu *.Mask F.SilkS)
       (net 6 GND))
     (pad 4 thru_hole oval (at 0 0 217.2) (size 1.19888 1.69926) (drill 0.70104) (layers *.Cu *.Mask F.SilkS)
       (net 9 /CLK))
-    (pad 5 thru_hole oval (at 1.99898 0 217.2) (size 1.19888 1.69926) (drill 0.70104) (layers *.Cu *.Mask F.SilkS)
+    (pad 5 thru_hole oval (at 1.99898 -0.000001 217.2) (size 1.19888 1.69926) (drill 0.70104) (layers *.Cu *.Mask F.SilkS)
       (net 10 /CSn))
     (pad 6 thru_hole oval (at 4.0005 0 217.2) (size 1.19888 1.69926) (drill 0.70104) (layers *.Cu *.Mask F.SilkS)
       (net 11 /MOSI))
@@ -248,63 +248,63 @@
     )
   )
 
-  (module conn-wire-pads:Hole-Screw-NP-#4 (layer Top) (tedit 5A56FC2F) (tstamp 5A6574B9)
+  (module conn-wire-pads:Hole-Screw-NP-#4 (layer Top) (tedit 5C4CB804) (tstamp 5A6574B9)
     (at 102.87 96.52)
     (descr "Mounting Hole - Screw #4")
     (attr virtual)
-    (fp_text reference REF** (at 0 -4.6) (layer F.SilkS) hide
+    (fp_text reference "" (at 0 -2.54) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.18)))
     )
-    (fp_text value VAL** (at 0 4.7) (layer F.Fab) hide
+    (fp_text value "" (at 0 4.7) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.18)))
     )
     (pad P thru_hole circle (at -0.87 0) (size 2.9464 2.9464) (drill 2.9464) (layers *.Cu *.Mask)
       (clearance 2.7178) (zone_connect 0))
   )
 
-  (module conn-wire-pads:Hole-Screw-NP-#4 (layer Top) (tedit 5A56FCD7) (tstamp 5A6574BE)
+  (module conn-wire-pads:Hole-Screw-NP-#4 (layer Top) (tedit 5C4CB807) (tstamp 5A6574BE)
     (at 88.9 102.87)
     (descr "Mounting Hole - Screw #4")
     (attr virtual)
-    (fp_text reference REF** (at 0 -4.6) (layer F.SilkS) hide
+    (fp_text reference "" (at 0 -4.6) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.18)))
     )
-    (fp_text value VAL** (at 0 4.7) (layer F.Fab) hide
+    (fp_text value "" (at 0 4.7) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.18)))
     )
     (pad P thru_hole circle (at 0.6 -15.87) (size 2.9464 2.9464) (drill 2.9464) (layers *.Cu *.Mask)
       (clearance 2.7178) (zone_connect 0))
   )
 
-  (module conn-wire-pads:Hole-Screw-NP-#4 (layer Top) (tedit 5A56FCCB) (tstamp 5A6574C3)
+  (module conn-wire-pads:Hole-Screw-NP-#4 (layer Top) (tedit 5C4CB80D) (tstamp 5A6574C3)
     (at 88.9 90.17)
     (descr "Mounting Hole - Screw #4")
     (attr virtual)
-    (fp_text reference REF** (at 0 -4.6) (layer F.SilkS) hide
+    (fp_text reference "" (at 0 -4.6) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.18)))
     )
-    (fp_text value VAL** (at 0 4.7) (layer F.Fab) hide
+    (fp_text value "" (at 0 4.7) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.18)))
     )
     (pad P thru_hole circle (at 0.6 15.83) (size 2.9464 2.9464) (drill 2.9464) (layers *.Cu *.Mask)
       (clearance 2.7178) (zone_connect 0))
   )
 
-  (module conn-wire-pads:Hole-Screw-NP-#4 (layer Top) (tedit 5A56FC1F) (tstamp 5A6574C8)
+  (module conn-wire-pads:Hole-Screw-NP-#4 (layer Top) (tedit 5C4CB80A) (tstamp 5A6574C8)
     (at 77.47 96.52)
     (descr "Mounting Hole - Screw #4")
     (attr virtual)
-    (fp_text reference REF** (at 0 -4.6) (layer F.SilkS) hide
+    (fp_text reference "" (at 0 -4.6) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.18)))
     )
-    (fp_text value VAL** (at 0 4.7) (layer F.Fab) hide
+    (fp_text value "" (at 0 4.7) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.18)))
     )
     (pad P thru_hole circle (at -0.47 -0.02) (size 2.9464 2.9464) (drill 2.9464) (layers *.Cu *.Mask)
       (clearance 2.7178) (zone_connect 0))
   )
 
-  (module Capacitors_SMD:C_0603 (layer Top) (tedit 59958EE7) (tstamp 5A551A77)
+  (module Capacitors_SMD:C_0603 (layer Top) (tedit 5C4CB81F) (tstamp 5A551A77)
     (at 95.504 96.532 90)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -313,7 +313,7 @@
     (fp_text reference C1 (at -2.5915 -0.1905 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value C (at 0 1.5 90) (layer F.Fab)
+    (fp_text value "" (at 0 1.5 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 1.4 0.65) (end -1.4 0.65) (layer F.CrtYd) (width 0.05))
@@ -340,7 +340,7 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer Top) (tedit 59958EE7) (tstamp 5A551A7C)
+  (module Capacitors_SMD:C_0603 (layer Top) (tedit 5C4CB815) (tstamp 5A551A7C)
     (at 97.5995 96.532 90)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
@@ -349,7 +349,7 @@
     (fp_text reference C2 (at -2.6035 0.1905 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value C (at 0 1.5 90) (layer F.Fab)
+    (fp_text value "" (at 0 1.5 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 1.4 0.65) (end -1.4 0.65) (layer F.CrtYd) (width 0.05))
@@ -376,13 +376,13 @@
     )
   )
 
-  (module vesc_encoder:love_small (layer Top) (tedit 0) (tstamp 5A5F1028)
+  (module vesc_encoder:love_small (layer Top) (tedit 5C4CB801) (tstamp 5A5F1028)
     (at 89.789 102.108)
-    (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
-      (effects (font (thickness 0.3)))
+    (fp_text reference "" (at 15.621 5.842) (layer F.SilkS) hide
+      (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
-    (fp_text value LOGO (at 0.75 0) (layer F.SilkS) hide
-      (effects (font (thickness 0.3)))
+    (fp_text value "" (at 0.75 0) (layer F.SilkS) hide
+      (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
     (fp_poly (pts (xy 2.41751 -0.507735) (xy 2.444613 -0.503325) (xy 2.466564 -0.489352) (xy 2.484926 -0.460398)
       (xy 2.501262 -0.411045) (xy 2.517136 -0.335873) (xy 2.53411 -0.229465) (xy 2.553748 -0.086402)
@@ -603,13 +603,13 @@
       (xy -1.268295 -1.344227)) (layer F.SilkS) (width 0.01))
   )
 
-  (module vesc_encoder:flutter_small (layer Top) (tedit 0) (tstamp 5A5F119D)
+  (module vesc_encoder:flutter_small (layer Top) (tedit 5C4CB812) (tstamp 5A5F119D)
     (at 86.487 91.186)
-    (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
-      (effects (font (thickness 0.3)))
+    (fp_text reference "" (at 0 0) (layer F.SilkS) hide
+      (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
-    (fp_text value LOGO (at 0.75 0) (layer F.SilkS) hide
-      (effects (font (thickness 0.3)))
+    (fp_text value "" (at 0.75 0) (layer F.SilkS) hide
+      (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
     (fp_poly (pts (xy -3.708083 -2.532209) (xy -3.703806 -2.531935) (xy -3.506396 -2.510907) (xy -3.369681 -2.476387)
       (xy -3.292066 -2.427205) (xy -3.271953 -2.362191) (xy -3.307746 -2.280176) (xy -3.326389 -2.255457)
@@ -746,6 +746,30 @@
       (xy 5.349031 -0.939972) (xy 5.456091 -0.935027)) (layer F.SilkS) (width 0.01))
   )
 
+  (dimension 33.020977 (width 0.3) (layer Dwgs.User)
+    (gr_text "33.021 mm" (at 59.55082 92.52429 89.55927193) (layer Dwgs.User)
+      (effects (font (size 1.5 1.5) (thickness 0.3)))
+    )
+    (feature1 (pts (xy 83.566 109.22) (xy 58.07386 109.023906)))
+    (feature2 (pts (xy 83.82 76.2) (xy 58.32786 76.003906)))
+    (crossbar (pts (xy 61.02778 76.024675) (xy 60.77378 109.044675)))
+    (arrow1a (pts (xy 60.77378 109.044675) (xy 60.196042 107.913694)))
+    (arrow1b (pts (xy 60.77378 109.044675) (xy 61.368849 107.922715)))
+    (arrow2a (pts (xy 61.02778 76.024675) (xy 60.432711 77.146635)))
+    (arrow2b (pts (xy 61.02778 76.024675) (xy 61.605518 77.155656)))
+  )
+  (dimension 36.703 (width 0.3) (layer Dwgs.User)
+    (gr_text "36.703 mm" (at 86.9315 69.643) (layer Dwgs.User)
+      (effects (font (size 1.5 1.5) (thickness 0.3)))
+    )
+    (feature1 (pts (xy 105.283 87.63) (xy 105.283 68.293)))
+    (feature2 (pts (xy 68.58 87.63) (xy 68.58 68.293)))
+    (crossbar (pts (xy 68.58 70.993) (xy 105.283 70.993)))
+    (arrow1a (pts (xy 105.283 70.993) (xy 104.156496 71.579421)))
+    (arrow1b (pts (xy 105.283 70.993) (xy 104.156496 70.406579)))
+    (arrow2a (pts (xy 68.58 70.993) (xy 69.706504 71.579421)))
+    (arrow2b (pts (xy 68.58 70.993) (xy 69.706504 70.406579)))
+  )
   (gr_circle (center 77 96.5) (end 79.5 96.5) (layer Dwgs.User) (width 0.2))
   (gr_line (start 68.707 87.63) (end 83.82 76.2) (layer Edge.Cuts) (width 0.2))
   (gr_line (start 72.39 97.79) (end 68.707 87.63) (layer Edge.Cuts) (width 0.2))
@@ -774,10 +798,6 @@
   (via (at 90.17 96.52) (size 0.8) (drill 0.4) (layers Top Bottom) (net 8))
   (segment (start 90.17 92.71) (end 90.17 96.52) (width 0.3) (layer Bottom) (net 8))
   (segment (start 82.838781 84.801219) (end 82.838781 85.378781) (width 0.3) (layer Bottom) (net 8))
-  (segment (start 92.71 94.615) (end 96.52 98.425) (width 0.3) (layer Bottom) (net 8))
-  (segment (start 96.52 98.425) (end 96.885 98.425) (width 0.3) (layer Top) (net 8))
-  (segment (start 96.885 98.425) (end 97.79 97.52) (width 0.3) (layer Top) (net 8))
-  (via (at 96.52 98.425) (size 0.8) (drill 0.4) (layers Top Bottom) (net 8))
   (segment (start 95.25 97.52) (end 97.79 97.52) (width 0.3) (layer Top) (net 8))
   (segment (start 94.615 97.625) (end 95.145 97.625) (width 0.3) (layer Top) (net 8))
   (segment (start 95.145 97.625) (end 95.25 97.52) (width 0.3) (layer Top) (net 8))
